@@ -119,13 +119,23 @@ h2{
     border: 2px solid var(--color-boton);
     width:60%;
 }
+
 #nosotros{
     width: 80%;   
     margin: 50px auto;
+    height: 280px;
+}
+#nosotros p{
+    margin: 40px;
+    text-align: center;
+    font-size:20px;
 }
 #contacto{
     width: 80%;   
     margin: 50px auto;
+}
+#contacto p{
+    text-align: justify;
 }
 #aviso{
     width: 80%;
@@ -149,5 +159,10 @@ footer{
 @media screen and (max-width: 768px) {
     #servicios{
         width: 80%;
+    }
+    #nosotros{
+        width: 80%;   
+        margin: 50px auto;
+        height: 450px;
     }
   }
