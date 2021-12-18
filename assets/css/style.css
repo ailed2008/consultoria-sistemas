@@ -108,8 +108,12 @@ h2{
     display: block;
 }
 #servicios{
-    width: 80%;   
+    width: 90%;   
     margin: 50px auto;
+    background:rgb(221, 216, 224);
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom:40px;
 }
 .servicio{
     border: 2px solid var(--color-boton);
@@ -131,6 +135,9 @@ h2{
 .links{
     color:#FFF;
     display: block;
+}
+.links:hover{
+   color: black;
 }
 footer{
     width: 100%;   
