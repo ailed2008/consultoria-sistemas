@@ -6,37 +6,55 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport"
         content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/fonts.css">
     <title>Servicios y sistemas en Acapulco</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
     <script src="http://code.jquery.com/jquery-latest.js"></script>
-    <script src="main.js"></script>
+    
+    <script src="assets/js/main.js"></script>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <!-- boton whatsapp -->
+    <script type="text/javascript">
+        (function () {
+            var options = {
+                whatsapp: "+5217441272464", // WhatsApp number
+                call_to_action: "Envíanos un mensaje", // Call to action
+                position: "right", // Position may be 'right' or 'left'
+                pre_filled_message: "Me podrían dar más información, por favor", // WhatsApp pre-filled message
+            };
+            var proto = document.location.protocol, host = "getbutton.io", url = proto + "//static." + host;
+            var s = document.createElement('script'); s.type = 'text/javascript'; s.async = true; s.src = url + '/widget-send-button/js/init.js';
+            s.onload = function () { WhWidgetSendButton.init(host, proto, options); };
+            var x = document.getElementsByTagName('script')[0]; x.parentNode.insertBefore(s, x);
+        })();
+    </script>
+    <!-- /GetButton.io widget -->
 </head>
 
 <body>
+
     <!-- HEADER -->
-    <!-- <header> -->
-        <div class="container-fluid">
-            <nav class="navbar navbar-expand-md navbar-light bg-light border-3 border-bottom border-primary">
-                <div class=" wrapper container-fluid">
-                    <a href="index.html" class="navbar-brand"><img id="logo" src="img/logo.png" alt="sistemas"></a>
-                    <!-- <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#MenuNav"> -->
-                        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#MenuNav" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
-                    <div id="MenuNav" class="collapse navbar-collapse">
-                        <ul class="navbar-nav ms-4">
-                            <li class="nav-item"><a class="nav-link" href="#index">Inicio</a></li>
-                            <li class="nav-item"><a class="nav-link" href="#servicios">Sevicios</a></li>
-                            <li class="nav-item"><a class="nav-link" href="#acerca">Acerca de nosotros</a></li>
-                            <li class="nav-item"><a class="nav-link" href="#contacto">Contáctanos</a></li>
-                        </ul>
-                    </div>
+    <div class="container-fluid">
+        <nav class="navbar fixed-top navbar-expand-md navbar-light bg-light border-3 border-bottom border-primary">
+            <div class=" wrapper container-fluid">
+                <a href="index.html" class="navbar-brand"><img id="logo" src="assets/img/logo.png" alt="sistemas"></a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#MenuNav"
+                    aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div id="MenuNav" class="collapse navbar-collapse">
+                    <ul class="navbar-nav ms-4">
+                        <li class="nav-item"><a class="nav-link" href="#index">Inicio</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#servicios">Sevicios</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#nosotros">Acerca de nosotros</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#contacto">Contáctanos</a></li>
+                    </ul>
                 </div>
-            </nav>
-        </div>
-    <!-- </header> -->
+            </div>
+        </nav>
+    </div>
 
     <section class="banner" id="index">
         <div class="banner-content">
@@ -54,7 +72,8 @@
                 <!-- <img src="..." class="card-img-top" alt="..."> -->
                 <div class="card-body">
                     <h5 class="card-title">Página de Facebook</h5>
-                    <p class="card-text">Creamos tu página de facebook, incluye portada y foto de perfil con el logo de tu agrado</p>
+                    <p class="card-text">Creamos tu página de facebook, incluye portada y foto de perfil con el logo de
+                        tu agrado</p>
                     <p class="card-text"><small class="text-muted">$300.00</small></p>
                     <button class="btn btn-primary" href="#">Más información</button>
                 </div>
@@ -72,7 +91,8 @@
                 <!-- <img src="..." class="card-img-top" alt="..."> -->
                 <div class="card-body">
                     <h5 class="card-title">Página web</h5>
-                    <p class="card-text">Creamos tu página web, incluye: hosting y domino (duración 1 año), máximo 2 páginas, 1 mes de soporte
+                    <p class="card-text">Creamos tu página web, incluye: hosting y domino (duración 1 año), máximo 2
+                        páginas, 1 mes de soporte
                     </p>
                     <p class="card-text"><small class="text-muted">$2300.00</small></p>
                     <button class="btn btn-primary" href="#">Más información</button>
@@ -103,7 +123,8 @@
     <!-- NOSOTROS -->
     <section id="nosotros">
         <h2>Acerca de nosotros</h2>
-        <p class="text-justify">Somos un grupo de Ingenieros en Sistemas, buscamos ayudar a pequeños negocios para que mejoren su servicio al
+        <p class="text-justify">Somos un grupo de Ingenieros en Sistemas, buscamos ayudar a pequeños negocios para que
+            mejoren su servicio al
             cliente.
         </p>
         <span>Nuestro compromiso</span>
@@ -111,13 +132,48 @@
     </section>
     <section id="contacto">
         <h2>Contáctanos</h2>
-        <p>Formulario</p>
-    </section>
+        <p>Por favor ponte en contacto con nosotros para más información al correo servicios@serviciosysistemas.com.mx,
+            al Whatsapp (744)127-2464, o con el siguiente formulario: </p>
 
+        <form>
+            <div class="form-group">
+                <!-- <label for="nombre">*Nombre</label> -->
+                <input type="text" class="form-control" id="nombre" aria-describedby="Nombre" placeholder="Nombre">
+                <!-- <small id="nameHelp" class="form-text text-muted">We'll never share your email with anyone else.</small> -->
+            </div>
+            <div class="form-group">
+                <!-- <label for="apellido">*Apellido</label> -->
+                <input type="text" class="form-control" id="apellido" aria-describedby="Apellido"
+                    placeholder="Apellido">
+                <!-- <small id="nameHelp" class="form-text text-muted">We'll never share your email with anyone else.</small> -->
+            </div>
+            <div class="form-group">
+                <!-- <label for="apellido">*Correo</label> -->
+                <input type="text" class="form-control" id="correo" aria-describedby="Correo" placeholder="Correo">
+                <!-- <small id="nameHelp" class="form-text text-muted">We'll never share your email with anyone else.</small> -->
+            </div>
+            <div class="form-group">
+                <select class=" form-control col-md-4 ">
+                    <option selected>Seleccione una opción</option>
+                    <option value="1">Página de facebook</option>
+                    <option value="2">Página web</option>
+                    <option value="3">Otra opción</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <!-- <label for="exampleFormControlTextarea1">*Mensaje</label> -->
+                <textarea class="form-control" id="mensaje" rows="3" placeholder="Mensaje"></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary">Mensaje</button>
+        </form>
+
+
+    </section>
 
     <footer>
         Servicios y sistemas en Acapulco &#9400 2021
-  
+        <a class="links" href="aviso-legal.html">Aviso legal</a>
+        <a class="links" href="index.html">Inicio</a>
     </footer>
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
         integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
